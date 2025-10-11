@@ -1,0 +1,90 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 2.5vh;
+  border-bottom: 1px solid #e4c9ec;
+}
+
+.logo {
+  width: 15vw;
+  height: 30vh;
+  border-radius: 100%;
+  margin: 10vw 0 3vh;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 2vw;
+  gap: 2vh;
+  height: 5vh;
+}
+
+.buttons button {
+  width: 10vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contacto {
+  background-color: #c86dd7;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid #c86dd7;
+}
+.btn-proyectos {
+  border: 2px solid rgb(248, 248, 248);
+}
+.btn-contacto:hover {
+  background-color: #d691df;
+  border-color: #d691df;
+}
+.btn-proyectos:hover {
+  background-color: bisque;
+  border-color: bisque;
+}
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.socialMedia .icon {
+  width: 30px;           
+  height: 30px;
+  border-radius: 50%;    
+  padding: 10px;         
+  background-color: transparent; 
+  border: 2px solid #c96dd750;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.socialMedia .icon:hover {
+  background-color: #c86dd7; 
+  border-color: #c86dd7;
+  transform: scale(1.1); 
+
+}
+.socialMedia .icon:hover {
+  filter: brightness(2);
+}
+
+.nombre {
+  background: linear-gradient(90deg, #c86dd7, #7a56d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+}
