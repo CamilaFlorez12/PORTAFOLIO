@@ -5,32 +5,100 @@
   font-weight: bold;
   font-size: 2.5vh;
   border-bottom: 1px solid #e5cdeb;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
 }
 
+/* ==== Título ==== */
+.titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #c86dd7, #7a56d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==== Menú (versión escritorio) ==== */
 .nav-menu {
   display: flex;
   align-items: flex-end;
   gap: 2vw;
   list-style: none;
-  margin: 3vh 4vw;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
+  margin: 0;
 }
 
-.nav-menu a{
+.nav-menu a {
   text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
   color: #c86dd7;
 }
 
-.titulo {
-  font-size: 2rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #c86dd7, #7a56d1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 3vh 4vw;
+/* ==== Botón hamburguesa (oculto en escritorio) ==== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #7a56d1;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* ==== Estado activo del botón ==== */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Mostrar hamburguesa */
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    border-left: 1px solid #e5cdeb;
+    border-bottom: 1px solid #e5cdeb;
+    padding: 1rem 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+
+
 }

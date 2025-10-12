@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nabvar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <h2 className="titulo">Mi portafolio</h2>
-      <ul className="nav-menu">
-        <li><Link to="/">inicio</Link></li>
-        <li><Link to="About">sobre mi</Link></li>
-        <li><Link to="Projects">proyectos</Link></li>
-        <li><Link to="Skills">Habilidades</Link></li>
-        <li><Link to="Contact">contacto</Link></li>
+
+      {/* Botón hamburguesa visible solo en móviles */}
+      <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Menú de navegación */}
+      <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
+        <li><Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
+        <li><Link to="/About" onClick={() => setMenuOpen(false)}>Sobre mí</Link></li>
+        <li><Link to="/Projects" onClick={() => setMenuOpen(false)}>Proyectos</Link></li>
+        <li><Link to="/Skills" onClick={() => setMenuOpen(false)}>Habilidades</Link></li>
+        <li><Link to="/Contact" onClick={() => setMenuOpen(false)}>Contacto</Link></li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

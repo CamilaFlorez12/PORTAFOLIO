@@ -96,6 +96,7 @@ h2 {
   to {
     transform: rotate(360deg);
   }
+  
 }
 
 /* Aplica la animación al logo */
@@ -103,4 +104,16 @@ h2 {
   width: 10vw; /* o el tamaño que uses */
   height: auto;
   animation: girar 6s linear infinite; /* duración, velocidad y repetición */
+}
+
+@media (max-width: 768px) {
+  .logo{
+    width: 40vw;
+  }
+  .buttons button {
+  width: 30vw;
+}
+h2 {
+  text-align: center;
+}
 }

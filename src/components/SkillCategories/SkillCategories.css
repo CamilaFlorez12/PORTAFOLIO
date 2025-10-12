@@ -18,3 +18,8 @@
   color: #7a56d1;
   margin-bottom: 1rem;
 }
+@media (max-width: 768px){
+  .skill-category{
+    width: 50vw;
+  }
+}
