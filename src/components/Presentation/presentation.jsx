@@ -1,6 +1,6 @@
 import React from "react";
 import "./Presentation.css";
-import logo from "../../assets/logo.svc.jpg";
+import logo from "../../assets/logo.png";
 import github from "../../assets/logoGithub.png";
 import linkedin from "../../assets/logoLinkedin.png";
 import correo from "../../assets/logoCorreo.png";

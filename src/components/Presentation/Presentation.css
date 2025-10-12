@@ -5,14 +5,13 @@
   justify-content: space-between;
   font-weight: bold;
   font-size: 2.5vh;
-  border-bottom: 1px solid #e4c9ec;
 }
 
 .logo {
   width: 15vw;
   height: 30vh;
   border-radius: 100%;
-  margin: 10vw 0 3vh;
+  margin: 6vw 0 3vh;
 }
 
 .buttons {
