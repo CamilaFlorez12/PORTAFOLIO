@@ -1,16 +1,76 @@
-# React + Vite
+# 💻 Portafolio de Laura Camila Florez Santos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ✨ Descripción
 
-Currently, two official plugins are available:
+Bienvenida(o) a mi espacio digital 🌸
+Este portafolio está desarrollado con React, HTML, CSS y JSX, y representa mi crecimiento, mi estilo y mi pasión por el desarrollo web.
+Aquí muestro mis proyectos, mi forma de crear interfaces funcionales y cómo disfruto transformar ideas en código.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Tecnologías y Herramientas
 
-## React Compiler
+- ⚛️ React – Para crear una interfaz modular y dinámica
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 💅 CSS – Para dar vida al diseño con estilos personalizados y responsivos
 
-## Expanding the ESLint configuration
+- 🧩 HTML – Estructura semántica y clara
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 💌 EmailJS – Para conectar el formulario de contacto directamente con mi correo
+
+
+## 🧭 Secciones Principales
+
+- 🏠 Inicio: Presentación breve y una introducción cálida.
+
+- 💁‍♀️ Sobre mí: Un vistazo personal a quién soy, mis intereses y mi camino como desarrolladora.
+
+- 🚀 Proyectos: Muestra de mis trabajos, ideas y experimentos con código.
+
+- 💌 Contacto: Un formulario funcional para que puedas escribirme directamente (gracias a EmailJS).
+
+### 🧱 Estructura del Proyecto
+``` 
+📂 portafolio-react/
+├── 📁 src/
+│   ├── 📁 assets/          # Imágenes y recursos
+│   ├── 📁 components/      # Componentes reutilizables (Navbar, AboutMe, etc.)
+│   ├── 📁 pages/           # Secciones principales
+│   ├── App.jsx             # Estructura general del sitio
+│   └── main.jsx            # Punto de entrada
+├── 📁 public/
+├── package.json
+└── README.md
+```
+## 🖼️ Vista Previa
+
+![Descripción del GIF](./src/assets/portafolio.gif)
+
+
+
+## ⚙️ Cómo Ejecutarlo Localmente
+- Clona el repositorio
+git clone https://github.com/CamilaFlorez12/PORTAFOLIO.git
+
+- Entra al directorio del proyecto
+cd portafolio-react
+
+- Instala las dependencias
+npm install
+
+- Ejecuta el servidor de desarrollo
+npm run dev
+
+## 💬 Contacto
+
+¿Te gustaría hablar sobre desarrollo, diseño o colaborar en algún proyecto?
+✨ ¡Me encantaría conocerte!
+
+📧 Correo : [07camilaflorezsantos@gmail.com](mailto:07camilaflorezsantos@gmail.com)
+
+🌐 LinkedIn : [Laura Camila Florez](https://www.linkedin.com/in/laura-camila-florez-santos-1403a637a/)
+
+💻 GitHub : [Mi GitHub](https://github.com/CamilaFlorez12)
+
+
+## 📝 Licencia
+
+Proyecto realizado por Laura Camila Florez Santos.
