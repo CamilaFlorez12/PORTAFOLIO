@@ -35,9 +35,11 @@
   font-weight: bold;
   font-size: 1rem;
   border: 2px solid #c86dd7;
+  padding: 0.5vw;
 }
 .btn-proyectos {
   border: 2px solid rgb(248, 248, 248);
+  padding: 0.5vw;
 }
 .btn-contacto:hover {
   background-color: #d691df;
@@ -56,22 +58,20 @@
 }
 
 .socialMedia .icon {
-  width: 30px;           
+  width: 30px;
   height: 30px;
-  border-radius: 50%;    
-  padding: 10px;         
-  background-color: transparent; 
+  border-radius: 50%;
+  padding: 10px;
+  background-color: transparent;
   border: 2px solid #c96dd750;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-
 .socialMedia .icon:hover {
-  background-color: #c86dd7; 
+  background-color: #c86dd7;
   border-color: #c86dd7;
-  transform: scale(1.1); 
-
+  transform: scale(1.1);
 }
 .socialMedia .icon:hover {
   filter: brightness(2);
@@ -86,4 +86,21 @@
 
 h2 {
   font-size: 3rem;
+}
+
+/* 🔄 Animación de giro continuo */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Aplica la animación al logo */
+.logo {
+  width: 10vw; /* o el tamaño que uses */
+  height: auto;
+  animation: girar 6s linear infinite; /* duración, velocidad y repetición */
 }

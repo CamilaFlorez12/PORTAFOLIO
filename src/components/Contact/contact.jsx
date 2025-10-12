@@ -1,7 +1,28 @@
 import React from "react";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault(); // evita recargar la página
+
+    emailjs
+      .sendForm(
+        "service_miu5evv",   // 🟣 tu Service ID
+        "template_ou2dht8",  // 🟣 tu Template ID
+        e.target,
+        "kFSd9vxxT4Q1A_4wg"  // 🟣 tu Public Key
+      )
+      .then(() => {
+        alert("Mensaje enviado correctamente 🎉");
+        e.target.reset(); // limpia los campos
+      })
+      .catch((error) => {
+        console.error("Error al enviar mensaje:", error);
+        alert("Hubo un problema, inténtalo de nuevo.");
+      });
+  };
+
   return (
     <section className="contact-section">
       <h2>Contacto</h2>
@@ -10,7 +31,6 @@ const Contact = () => {
       </p>
 
       <div className="contact-container">
-        {/* 🔹 Información de contacto */}
         <div className="contact-info">
           <h3>Información de Contacto</h3>
 
@@ -46,15 +66,15 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="nombre">Nombre</label>
-          <input type="text" id="nombre" placeholder="Tu nombre" />
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
 
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="tu@email.com" />
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
 
           <label htmlFor="mensaje">Mensaje</label>
-          <textarea id="mensaje" placeholder="Cuéntame sobre tu proyecto..." />
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required />
 
           <button type="submit">Enviar Mensaje</button>
         </form>

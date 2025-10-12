@@ -15,9 +15,14 @@
   margin: 3vh 4vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
-.nav-menu li:hover {
+.nav-menu a{
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
   color: #c86dd7;
 }
 
