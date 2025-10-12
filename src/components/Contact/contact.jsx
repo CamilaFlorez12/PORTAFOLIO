@@ -14,7 +14,6 @@ const Contact = () => {
         "kFSd9vxxT4Q1A_4wg"  // 🟣 tu Public Key
       )
       .then(() => {
-        alert("Mensaje enviado correctamente 🎉");
         e.target.reset(); // limpia los campos
       })
       .catch((error) => {
