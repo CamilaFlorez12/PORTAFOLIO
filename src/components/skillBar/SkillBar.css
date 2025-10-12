@@ -1,0 +1,25 @@
+.skill-bar-container {
+  margin-bottom: 1rem;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #7a56d1;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+  background-color: #f3e5f5;
+  height: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.8s ease;
+}

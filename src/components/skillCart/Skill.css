@@ -1,0 +1,26 @@
+.skills {
+  text-align: center;
+  padding: 3rem;
+}
+
+.subtitulo {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, auto);   
+  gap: 2rem;                             
+  justify-items: center;                
+  align-items: start;                   
+  max-width: 900px;                      
+  margin: 0 auto;                       
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+}
+}
