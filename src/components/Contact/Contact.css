@@ -1,0 +1,102 @@
+.contact-section {
+  background-color: #faf5fc;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #1e1e2f;
+}
+
+.contact-subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* 📦 Contenedor principal */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 🔹 Columna de información */
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #1e1e2f;
+  margin-bottom: 1rem;
+}
+
+.contact-item h4 {
+  color: #7a56d1;
+  margin-bottom: 0.3rem;
+}
+
+.contact-item p,
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.contact-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  background-color: #faf5fc;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+/* 🔹 Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #c86dd7;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #dca7e3;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
