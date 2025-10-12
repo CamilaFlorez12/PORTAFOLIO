@@ -1,0 +1,23 @@
+.projects {
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#e9daef2b ;
+}
+
+.subtitulo {
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  justify-content: center; 
+  width: 80%; 
+  max-width: 900px;
+  gap:2vh;
+  margin-top: 10vh;
+}
