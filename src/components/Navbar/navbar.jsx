@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import "./Nabvar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <h2 className="titulo">Mi portafolio</h2>
 
-      <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
+      <div
+        className={`hamburger ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -22,6 +25,13 @@ const Navbar = () => {
         <li><Link to="/Skills" onClick={() => setMenuOpen(false)}>Habilidades</Link></li>
         <li><Link to="/Contact" onClick={() => setMenuOpen(false)}>Contacto</Link></li>
       </ul>
+
+      <button
+        className="theme-toggle"
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      >
+        {theme === "light" ? "☾" : "☀"}
+      </button>
     </nav>
   );
 };

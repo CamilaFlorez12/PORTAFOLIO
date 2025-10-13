@@ -1,3 +1,15 @@
+:root {
+  --bar-bg: #f3e5f5;       
+  --bar-fill: #7a56d1;     
+  --bar-text: #7a56d1;     
+}
+
+[data-theme="dark"] {
+  --bar-bg: #3a3a3a;       
+  --bar-fill: #b388ff;     
+  --bar-text: #b388ff;    
+}
+
 .skill-bar-container {
   margin-bottom: 1rem;
 }
@@ -6,20 +18,23 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
-  color: #7a56d1;
+  color: var(--bar-text);
   font-weight: bold;
   margin-bottom: 0.3rem;
+  transition: color 0.3s ease;
 }
 
 .skill-bar {
-  background-color: #f3e5f5;
+  background-color: var(--bar-bg);
   height: 10px;
   border-radius: 8px;
   overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .skill-progress {
   height: 100%;
   border-radius: 8px;
-  transition: width 0.8s ease;
+  background-color: var(--bar-fill);
+  transition: width 0.8s ease, background-color 0.3s ease;
 }

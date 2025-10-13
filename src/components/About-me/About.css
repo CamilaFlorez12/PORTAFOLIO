@@ -1,21 +1,51 @@
+:root {
+  --background-color: #ffffff;
+  --background-gradient: linear-gradient(180deg, #ffffff 0%, #f9f3fc 100%);
+  --text-color: #333;
+  --subtext-color: #777;
+  --card-bg: #ffffff;
+  --accent-color: #7a56d1;
+  --highlight-color: #c86dd7;
+  --shadow-color: rgba(122, 86, 209, 0.2);
+  --shadow-hover: rgba(122, 86, 209, 0.3);
+  --img-border: #d6b0f2;
+  --img-hover-bg: #e8a8f1;
+}
+
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --background-gradient: linear-gradient(180deg, #1a1a1a 0%, #2a2a2a 100%);
+  --text-color: #f0f0f0;
+  --subtext-color: #ccc;
+  --card-bg: #2a2a2a;
+  --accent-color: #b388ff;
+  --highlight-color: #c6a3ff;
+  --shadow-color: rgba(179, 136, 255, 0.2);
+  --shadow-hover: rgba(179, 136, 255, 0.3);
+  --img-border: #b388ff;
+  --img-hover-bg: #c6a3ff;
+}
+
+/* About Me */
 .aboutMe {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(180deg, #ffffff 0%, #f9f3fc 100%);
-  color: #333;
+  background: var(--background-gradient);
+  color: var(--text-color);
+  transition: all 0.3s ease;
 }
 
 .aboutMe h2 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  background: linear-gradient(90deg, #c86dd7, #7a56d1);
+  background: linear-gradient(90deg, var(--highlight-color), var(--accent-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .subtitulo {
-  color: #777;
+  color: var(--subtext-color);
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
@@ -34,13 +64,13 @@
   height: auto;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0 6px 15px rgba(122, 86, 209, 0.2);
+  box-shadow: 0 6px 15px var(--shadow-color);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .foto-camila:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(122, 86, 209, 0.3);
+  box-shadow: 0 10px 25px var(--shadow-hover);
 }
 
 .info {
@@ -52,7 +82,7 @@
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 2.5rem;
-  color: #444;
+  color: var(--text-color);
 }
 
 .atributos {
@@ -62,40 +92,40 @@
 }
 
 .atributo {
-  background: white;
+  background: var(--card-bg);
   border-radius: 15px;
   padding: 1rem;
-  box-shadow: 0 3px 10px rgba(200, 109, 215, 0.1);
+  box-shadow: 0 3px 10px var(--shadow-color);
   transition: all 0.3s ease;
 }
 
 .atributo:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(122, 86, 209, 0.2);
+  box-shadow: 0 5px 15px var(--shadow-hover);
 }
 
 .atributo img {
   width: 45px;
   border-radius: 50%;
-  border: 2px solid #d6b0f2;
+  border: 2px solid var(--img-border);
   padding: 6px;
   transition: all 0.3s ease;
 }
 
 .atributo img:hover {
-  background-color: #e8a8f1;
+  background-color: var(--img-hover-bg);
   transform: scale(1.1);
 }
 
 .atributo h3 {
   margin-top: 0.5rem;
   font-size: 1.1rem;
-  color: #7a56d1;
+  color: var(--accent-color);
 }
 
 .atributo p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--subtext-color);
 }
 
 @media (max-width: 768px) {

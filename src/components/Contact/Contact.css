@@ -1,52 +1,73 @@
+:root {
+  --contact-bg: #faf5fc;
+  --contact-card-bg: #ffffff;
+  --contact-text: #1e1e2f;
+  --contact-subtext: #555;
+  --contact-accent: #7a56d1;
+  --contact-btn-bg: #c86dd7;
+  --contact-btn-hover: #dca7e3;
+}
+
+[data-theme="dark"] {
+  --contact-bg: #1a1a1a;
+  --contact-card-bg: #2a2a2a;
+  --contact-text: #f0f0f0;
+  --contact-subtext: #ccc;
+  --contact-accent: #b388ff;
+  --contact-btn-bg: #7a56d1;
+  --contact-btn-hover: #9f7eff;
+}
+
 .contact-section {
-  background-color: #faf5fc;
+  background-color: var(--contact-bg);
   padding: 3rem 2rem;
   text-align: center;
+  color: var(--contact-text);
+  transition: all 0.3s ease;
 }
 
 .contact-section h2 {
   font-size: 2rem;
-  color: #1e1e2f;
+  color: var(--contact-text);
 }
 
 .contact-subtitle {
-  color: #555;
+  color: var(--contact-subtext);
   margin-bottom: 2rem;
 }
 
-/* 📦 Contenedor principal */
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-items: center;
   align-items: start;
-  background-color: white;
+  background-color: var(--contact-card-bg);
   border-radius: 15px;
   padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
 }
 
-/* 🔹 Columna de información */
 .contact-info {
   text-align: left;
 }
 
 .contact-info h3 {
-  color: #1e1e2f;
+  color: var(--contact-text);
   margin-bottom: 1rem;
 }
 
 .contact-item h4 {
-  color: #7a56d1;
+  color: var(--contact-accent);
   margin-bottom: 0.3rem;
 }
 
 .contact-item p,
 .contact-item a {
-  color: #333;
+  color: var(--contact-subtext);
   text-decoration: none;
   margin-bottom: 0.8rem;
   display: block;
@@ -55,13 +76,13 @@
 .contact-note {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #555;
-  background-color: #faf5fc;
+  color: var(--contact-subtext);
+  background-color: var(--contact-bg);
   border-radius: 10px;
   padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* 🔹 Formulario */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -77,10 +98,13 @@
   padding: 10px;
   font-size: 1rem;
   resize: none;
+  background-color: var(--contact-card-bg);
+  color: var(--contact-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-form button {
-  background-color: #c86dd7;
+  background-color: var(--contact-btn-bg);
   color: white;
   border: none;
   padding: 12px;
@@ -91,10 +115,9 @@
 }
 
 .contact-form button:hover {
-  background-color: #dca7e3;
+  background-color: var(--contact-btn-hover);
 }
 
-/* 📱 Responsive */
 @media (max-width: 768px) {
   .contact-container {
     grid-template-columns: 1fr;

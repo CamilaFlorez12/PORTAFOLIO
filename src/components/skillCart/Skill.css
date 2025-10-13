@@ -1,10 +1,25 @@
+:root {
+  --skills-bg: #faf5fc;
+  --text-color: #222;
+  --subtext-color: #888;
+}
+
+[data-theme="dark"] {
+  --skills-bg: #1a1a1a;
+  --text-color: #f0f0f0;
+  --subtext-color: #ccc;
+}
+
 .skills {
   text-align: center;
   padding: 3rem;
+  background-color: var(--skills-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease;
 }
 
 .subtitulo {
-  color: #888;
+  color: var(--subtext-color);
   margin-bottom: 2rem;
 }
 
@@ -22,5 +37,5 @@
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
-}
+  }
 }
