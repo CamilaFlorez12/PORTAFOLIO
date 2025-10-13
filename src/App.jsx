@@ -1,15 +1,15 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/navbar.jsx";
 import Presentation from "./components/Presentation/presentation.jsx";
 import AboutMe from "./components/About-me/about.jsx";
 import Projects from "./components/projects/project.jsx";
 import Skills from "./components/skillCart/skill.jsx";
 import Contact from "./components/Contact/contact.jsx";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-   <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Presentation />} />
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/Skills" element={<Skills />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
