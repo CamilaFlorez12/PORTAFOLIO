@@ -37,9 +37,9 @@
 }
 
 @media (max-width: 768px) {
+
   .projects-grid {
     grid-template-columns: 1fr;
-    width: 90%;
     margin-top: 5vh;
   }
 }

@@ -73,3 +73,9 @@
   background-color: #dca7e3;
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .card{
+    width: 80vw;
+  }
+}
