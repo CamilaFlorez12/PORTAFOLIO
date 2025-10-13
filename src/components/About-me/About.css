@@ -1,6 +1,23 @@
 .aboutMe {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
+  background: linear-gradient(180deg, #ffffff 0%, #f9f3fc 100%);
+  color: #333;
+}
+
+.aboutMe h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #c86dd7, #7a56d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitulo {
+  color: #777;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .text-aboutMe {
@@ -8,13 +25,22 @@
   align-items: flex-start;
   justify-content: center;
   gap: 3rem;
-  margin-top: 2rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .foto-camila {
   width: 20vw;
+  height: auto;
   border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(122, 86, 209, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.foto-camila:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(122, 86, 209, 0.3);
 }
 
 .info {
@@ -23,27 +49,36 @@
 }
 
 .texto {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  color: #444;
 }
 
 .atributos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-template-rows: repeat(2, auto);   
-  gap: 2rem;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.5rem;
 }
 
+.atributo {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(200, 109, 215, 0.1);
+  transition: all 0.3s ease;
+}
+
+.atributo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(122, 86, 209, 0.2);
+}
 
 .atributo img {
-  width: 3vw;
+  width: 45px;
   border-radius: 50%;
-  border: 2px solid #e8a8f1;
-  padding: 8px;
+  border: 2px solid #d6b0f2;
+  padding: 6px;
   transition: all 0.3s ease;
 }
 
@@ -55,14 +90,32 @@
 .atributo h3 {
   margin-top: 0.5rem;
   font-size: 1.1rem;
+  color: #7a56d1;
 }
 
 .atributo p {
   font-size: 0.9rem;
-  color: #555;
+  color: #666;
 }
 
-.subtitulo {
-  color: #999;
-  font-size: 1.1rem;
+@media (max-width: 768px) {
+  .text-aboutMe {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foto-camila {
+    width: 60vw;
+    margin-bottom: 1.5rem;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .texto {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }

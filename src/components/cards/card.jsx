@@ -2,7 +2,6 @@ import React from "react";
 import "./Card.css";
 
 const Card = ({ imagen, titulo, descripcion, tecnologias, link }) => {
-  // separa las tecnologías por "|"
   const techList = tecnologias.split("|").map((t) => t.trim());
 
   return (

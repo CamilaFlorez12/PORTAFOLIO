@@ -2,10 +2,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #f9f3fc 0%, #ffffff 100%);
+  padding: 3rem 2rem;
   font-weight: bold;
-  font-size: 2.5vh;
+  color: #333;
 }
+
+.presentation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.presentation p:first-of-type {
+  font-size: 1.3rem;
+  color: #7a56d1;
+  font-weight: 600;
+}
+
+.presentation p:last-of-type {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
 
 .logo {
   width: 15vw;
@@ -14,41 +35,38 @@
   margin: 6vw 0 3vh;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  margin: 2vw;
-  gap: 2vh;
-  height: 5vh;
+.buttons{
+  padding: 5vh;
 }
 
 .buttons button {
-  width: 10vw;
-  border-radius: 10px;
+  width: 150px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  margin: 0 1vw;
 }
 
 .btn-contacto {
-  background-color: #c86dd7;
+  background: linear-gradient(90deg, #c86dd7, #7a56d1);
   color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  border: 2px solid #c86dd7;
-  padding: 0.5vw;
+  border: none;
+  box-shadow: 0 4px 10px rgba(122, 86, 209, 0.3);
 }
+
 .btn-proyectos {
-  border: 2px solid rgb(248, 248, 248);
-  padding: 0.5vw;
+  background: transparent;
+  color: #7a56d1;
+  border: 2px solid #7a56d1;
 }
-.btn-contacto:hover {
-  background-color: #d691df;
-  border-color: #d691df;
-}
+
 .btn-proyectos:hover {
-  background-color: bisque;
-  border-color: bisque;
+  background: #7a56d1;
+  color: white;
 }
+
 .socialMedia {
   display: flex;
   justify-content: center;
@@ -88,32 +106,50 @@ h2 {
   font-size: 3rem;
 }
 
-/* 🔄 Animación de giro continuo */
-@keyframes girar {
-  from {
-    transform: rotate(0deg);
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-10px);
   }
-  
 }
 
-/* Aplica la animación al logo */
 .logo {
-  width: 10vw; /* o el tamaño que uses */
-  height: auto;
-  animation: girar 6s linear infinite; /* duración, velocidad y repetición */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 2rem 0;
+  animation: flotar 4s ease-in-out infinite;
+  box-shadow: 0 4px 10px rgba(200, 109, 215, 0.3);
+  transition: transform 0.3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
 
 @media (max-width: 768px) {
-  .logo{
-    width: 40vw;
+  .presentation {
+    padding: 2rem 1rem;
   }
+
+  .logo {
+    width: 35vw;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   .buttons button {
-  width: 30vw;
-}
-h2 {
-  text-align: center;
-}
+    width: 60vw;
+  }
 }
