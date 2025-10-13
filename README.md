@@ -59,7 +59,6 @@ npm install
 - Ejecuta el servidor de desarrollo
 npm run dev
 
-- Entra al siguiente [link](portafolio-uchl.vercel.app)
 
 ## 💬 Contacto
 
