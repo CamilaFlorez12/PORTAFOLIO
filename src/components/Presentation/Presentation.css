@@ -161,4 +161,10 @@
   .buttons button {
     width: 60vw;
   }
+  .socialMedia .icon{
+    width: 15vw;
+  }
+  .socialMedia{
+    margin: 0;
+  }
 }
