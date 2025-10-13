@@ -12,7 +12,6 @@
   background-color: white;
 }
 
-/* ==== Título ==== */
 .titulo {
   font-size: 1.8rem;
   font-weight: bold;
@@ -21,7 +20,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* ==== Menú (versión escritorio) ==== */
 .nav-menu {
   display: flex;
   align-items: flex-end;
@@ -40,7 +38,6 @@
   color: #c86dd7;
 }
 
-/* ==== Botón hamburguesa (oculto en escritorio) ==== */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -60,7 +57,6 @@
   transition: all 0.3s ease;
 }
 
-/* ==== Estado activo del botón ==== */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
@@ -71,34 +67,50 @@
   transform: rotate(-45deg) translateY(-8px);
 }
 
-/* ==== Responsive ==== */
 @media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
   .hamburger {
-    display: flex; /* Mostrar hamburguesa */
+    display: flex;
+    z-index: 30;
   }
 
   .nav-menu {
-    position: absolute;
-    top: 100%;
+    position: fixed; 
+    top: 0;
     right: 0;
+    height: 100vh;
+    width: 70%;
     background-color: #fff;
     flex-direction: column;
     align-items: center;
-    width: 65%;
+    justify-content: center;
+    gap: 2rem;
     border-left: 1px solid #e5cdeb;
-    border-bottom: 1px solid #e5cdeb;
-    padding: 1rem 0;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 20;
   }
 
   .nav-menu.active {
-    transform: translateX(0);
+    transform: translateX(0); 
   }
 
   .nav-menu li {
-    margin: 1rem 0;
+    list-style: none;
   }
 
+  .nav-menu a {
+    font-size: 1.3rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
+  .nav-menu a:hover {
+    color: #c86dd7;
+  }
 }

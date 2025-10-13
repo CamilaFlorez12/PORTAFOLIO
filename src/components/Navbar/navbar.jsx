@@ -9,14 +9,12 @@ const Navbar = () => {
     <nav className="navbar">
       <h2 className="titulo">Mi portafolio</h2>
 
-      {/* Botón hamburguesa visible solo en móviles */}
       <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      {/* Menú de navegación */}
       <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
         <li><Link to="/About" onClick={() => setMenuOpen(false)}>Sobre mí</Link></li>
