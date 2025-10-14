@@ -59,8 +59,6 @@ npm install
 - Ejecuta el servidor de desarrollo
 npm run dev
 
-- URL
-  [aquí](camilaportfolio.vercel.app)
 
 ## 💬 Contacto
 
