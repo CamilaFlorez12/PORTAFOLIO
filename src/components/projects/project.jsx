@@ -5,6 +5,7 @@ import starwars from "../../assets/project starwars.png";
 import videojeugo from "../../assets/project videojuego.webp";
 import gym from "../../assets/project gym.webp";
 import recetas from "../../assets/project recetas culinarias.jpg";
+import tiendaVideojuegos from "../../assets/tienda videojuegos.png"
 
 const Projects = ()=>{
     return(
@@ -40,6 +41,14 @@ const Projects = ()=>{
                 tecnologias="Javascript | Node.js | MongoDB | Express"
                 link="https://github.com/ValentinaDelgadoRincon/Recetas_Culinarias"
                 />
+                <Card 
+                imagen={tiendaVideojuegos}
+                titulo="Tienda de videojueos"
+                descripcion="Aplicación Full Stack para la gestión de inventario y ventas de una tienda de videojuegos físicos y consolas."
+                tecnologias="Node.js | MongoDB | Express | HTML | CSS | Javascript"
+                link="https://github.com/ValentinaDelgadoRincon/Frontend_inventario"
+                />
+                
             </div>
         </div>
     )
