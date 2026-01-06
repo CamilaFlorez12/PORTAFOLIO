@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import camila from "../../assets/foto.jpeg";
+import camila from "../../assets/fotoC.jpeg";
 import codigo from "../../assets/icono-codigo.jpg";
 import corazon from "../../assets/icono-corazon.jpg";
 import creatividad from "../../assets/icono-creatividad.jpg";
@@ -18,11 +18,11 @@ const AboutMe = () => {
         <div className="info">
           <p className="texto">
 
- Desarrolladora Backend con formación intensiva en desarrollo web y experiencia en proyectos utilizando diversas tecnologías. Maneja con solidez HTML, CSS, JavaScript, MongoDB y Node.js. 
+ Desarrolladora fronted con formación intensiva en desarrollo web y experiencia en proyectos utilizando diversas tecnologías. Maneja con solidez HTML, CSS, JavaScript, MongoDB, Node.js y express. 
 
 Ha trabajado tanto en equipo como de manera individual, destacando especialmente en backend y bases de datos no relacionales. 
 
-Se caracteriza por su buena comunicación, capacidad de trabajo en equipo y aprendizaje autónomo. Actualmente busca oportunidades para aportar en el área de backend y, al mismo tiempo, seguir fortaleciendo sus habilidades técnicas y personales. 
+Se caracteriza por su buena comunicación, capacidad de trabajo en equipo y aprendizaje autónomo. Actualmente busca oportunidades para aportar en el área de fronted y, al mismo tiempo, seguir fortaleciendo sus habilidades técnicas y personales. 
 
   
           </p>
