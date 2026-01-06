@@ -20,7 +20,7 @@ const AboutMe = () => {
 
  Desarrolladora fronted con formación intensiva en desarrollo web y experiencia en proyectos utilizando diversas tecnologías. Maneja con solidez HTML, CSS, JavaScript, MongoDB, Node.js y express. 
 
-Ha trabajado tanto en equipo como de manera individual, destacando especialmente en backend y bases de datos no relacionales. 
+Ha trabajado tanto en equipo como de manera individual, destacando especialmente en fronted y el consumo de PIS. 
 
 Se caracteriza por su buena comunicación, capacidad de trabajo en equipo y aprendizaje autónomo. Actualmente busca oportunidades para aportar en el área de fronted y, al mismo tiempo, seguir fortaleciendo sus habilidades técnicas y personales. 
 
