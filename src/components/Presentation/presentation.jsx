@@ -13,7 +13,7 @@ const Presentation = () => {
       <h2>
         Hola, soy <span className="nombre">Camila Florez</span>
       </h2>
-      <p>Desarrolladora| backend | </p>
+      <p>Desarrolladora| fronted | </p>
       <p>Desarrollo ideas de forma creativa</p>
       <div className="buttons">
         <Link to="/Contact"><button className="btn-contacto">Contáctame</button></Link>
